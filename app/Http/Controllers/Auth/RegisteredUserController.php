@@ -24,6 +24,11 @@ class RegisteredUserController extends Controller
         return Inertia::render('Auth/Register');
     }
 
+    protected function redirectTo()
+{
+    return '/path';
+}
+
     /**
      * Handle an incoming registration request.
      *

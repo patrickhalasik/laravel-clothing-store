@@ -15,13 +15,22 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+Route::redirect('/', '/homepage');
+
+Route::get('/homepage', function () {
+    return inertia('Homepage');
+});
+
+Route::get('/shop', function () {
+    return inertia('Shop');
+});
+
+Route::get('/news', function () {
+    return inertia('News');
+});
+
+Route::get('/minichat', function () {
+    return inertia('Minichat');
 });
 
 Route::get('/dashboard', function () {
