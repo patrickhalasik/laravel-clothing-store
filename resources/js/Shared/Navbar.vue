@@ -14,7 +14,7 @@
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div class="text-sm lg:flex-grow">
 
-      <Link href="/homepage" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" :class="{'font-bold underline text-yellow-200': $page.component === 'Homepage'}">
+      <Link href="/homepage" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:border-transparent hover:text-red-500 hover:bg-white hover:rounded mr-4" :class="{'font-bold underline': $page.component === 'Homepage'}">
             <span style="display:flex; align-items:center">
                 <HomepageIcon />
                 Accueil
@@ -22,21 +22,21 @@
       </Link>
 
 
-      <Link href="/shop" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" :class="{'font-bold underline text-yellow-200': $page.component === 'Shop'}">
+      <Link href="/shop" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:border-transparent hover:text-red-500 hover:bg-white hover:rounded mr-4" :class="{'font-bold underline': $page.component === 'Shop'}">
             <span style="display:flex; align-items:center">
                 <ShopIcon />
                 Magasin
             </span>
       </Link>
 
-      <Link href="/news" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" :class="{'font-bold underline text-yellow-200': $page.component === 'News'}">
+      <Link href="/news" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:border-transparent hover:text-red-500 hover:bg-white hover:rounded mr-4" :class="{'font-bold underline': $page.component === 'News'}">
             <span style="display:flex; align-items:center">
                 <NewsIcon />
                 News
             </span>
       </Link>
 
-      <Link href="/minichat" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" :class="{'font-bold underline text-yellow-200': $page.component === 'Minichat'}">
+      <Link href="/minichat" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:border-transparent hover:text-red-500 hover:bg-white hover:rounded mr-4" :class="{'font-bold underline': $page.component === 'Minichat'}">
             <span style="display:flex; align-items:center">
                 <MinichatIcon />
                 Mini-chat
